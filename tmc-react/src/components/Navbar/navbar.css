@@ -1,0 +1,128 @@
+/* .no-underline a {
+  text-decoration: none !important;
+}
+
+.no-underline a:hover {
+  text-decoration: none !important;
+}
+
+:where(.css-dev-only-do-not-override-1r287do).ant-menu-light,
+:where(.css-dev-only-do-not-override-1r287do).ant-menu-light .ant-menu-item {
+  background: none !important;
+}
+
+:where(.css-dev-only-do-not-override-1r287do).ant-menu-light
+  .ant-menu-item:hover {
+  background: none !important;
+}
+
+:where(.css-dev-only-do-not-override-1r287do).ant-menu-light
+  .ant-menu-submenu-title:hover {
+  background: none !important;
+}
+:where(.css-dev-only-do-not-override-1r287do).ant-layout-header {
+  height: 7%;
+}
+
+:where(.css-dev-only-do-not-override-1r287do).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-item:hover::after,
+:where(.css-dev-only-do-not-override-1r287do).ant-menu-light
+  > .ant-menu.ant-menu-horizontal
+  > .ant-menu-item:hover::after,
+:where(.css-dev-only-do-not-override-1r287do).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-submenu:hover::after,
+:where(.css-dev-only-do-not-override-1r287do).ant-menu-light
+  > .ant-menu.ant-menu-horizontal
+  > .ant-menu-submenu:hover::after,
+:where(.css-dev-only-do-not-override-1r287do).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-item-active::after,
+:where(.css-dev-only-do-not-override-1r287do).ant-menu-light
+  > .ant-menu.ant-menu-horizontal
+  > .ant-menu-item-active::after,
+:where(.css-dev-only-do-not-override-1r287do).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-submenu-active::after,
+:where(.css-dev-only-do-not-override-1r287do).ant-menu-light
+  > .ant-menu.ant-menu-horizontal
+  > .ant-menu-submenu-active::after,
+:where(.css-dev-only-do-not-override-1r287do).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-item-open::after,
+:where(.css-dev-only-do-not-override-1r287do).ant-menu-light
+  > .ant-menu.ant-menu-horizontal
+  > .ant-menu-item-open::after,
+:where(.css-dev-only-do-not-override-1r287do).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-submenu-open::after,
+:where(.css-dev-only-do-not-override-1r287do).ant-menu-light
+  > .ant-menu.ant-menu-horizontal
+  > .ant-menu-submenu-open::after {
+  border-bottom-color: transparent !important;
+}
+
+
+
+
+:where(.css-dev-only-do-not-override-1r287do).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-submenu-selected::after,
+:where(.css-dev-only-do-not-override-1r287do).ant-menu-light
+  > .ant-menu.ant-menu-horizontal
+  > .ant-menu-submenu-selected::after {
+  border-bottom-width: 0 !important;
+  border-bottom-color: transparent !important;
+} */
+
+/* Disable underline for all links */
+.no-underline a {
+  text-decoration: none !important;
+}
+
+.no-underline a:hover {
+  text-decoration: none !important;
+}
+
+/* Remove background on hover for menu items and submenu titles */
+.ant-menu-light,
+.ant-menu-light .ant-menu-item {
+  background: none !important;
+}
+
+.ant-menu-light .ant-menu-item:hover {
+  background: none !important;
+}
+
+.ant-menu-light .ant-menu-submenu-title:hover {
+  background: none !important;
+}
+
+.ant-layout-header {
+  height: 7%;
+}
+
+/* Override Ant Design underline for all menu item states */
+.ant-menu-light.ant-menu-horizontal > .ant-menu-item:hover::after,
+.ant-menu-light > .ant-menu.ant-menu-horizontal > .ant-menu-item:hover::after,
+.ant-menu-light.ant-menu-horizontal > .ant-menu-submenu:hover::after,
+.ant-menu-light
+  > .ant-menu.ant-menu-horizontal
+  > .ant-menu-submenu:hover::after,
+.ant-menu-light.ant-menu-horizontal > .ant-menu-item-active::after,
+.ant-menu-light > .ant-menu.ant-menu-horizontal > .ant-menu-item-active::after,
+.ant-menu-light.ant-menu-horizontal > .ant-menu-submenu-active::after,
+.ant-menu-light
+  > .ant-menu.ant-menu-horizontal
+  > .ant-menu-submenu-active::after,
+.ant-menu-light.ant-menu-horizontal > .ant-menu-item-open::after,
+.ant-menu-light > .ant-menu.ant-menu-horizontal > .ant-menu-item-open::after,
+.ant-menu-light.ant-menu-horizontal > .ant-menu-submenu-open::after,
+.ant-menu-light
+  > .ant-menu.ant-menu-horizontal
+  > .ant-menu-submenu-open::after {
+  border-bottom-color: transparent !important;
+}
+
+/* Override Ant Design underline for selected submenu items */
+.ant-menu-light.ant-menu-horizontal > .ant-menu-submenu-selected::after,
+.ant-menu-light
+  > .ant-menu.ant-menu-horizontal
+  > .ant-menu-submenu-selected::after {
+  border-bottom-width: 0 !important;
+  border-bottom-color: transparent !important;
+}

@@ -1,0 +1,82 @@
+.footer {
+  width: 100%;
+  padding-block: 1em;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #0d0d0d;
+}
+
+.support-section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.stayConnection-section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-left: 20px;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.fl1,
+.fl2,
+.fl3 {
+  margin-bottom: 5px;
+  color: black;
+  cursor: pointer;
+}
+
+.fl1 p:hover,
+.fl2 p:hover,
+.fl3 p:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.email {
+  color: red;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.email:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 3em 20px;
+  }
+
+  .support-section,
+  .stayConnection-section {
+    margin: 20px 0; /* Adjust top and bottom margins for clarity */
+    flex-direction: column; /* Stack sections vertically on small screens */
+  }
+}
+
+.SUPPORT-PHONE,
+.SUPPORT-LOCATION {
+  border: 1px solid transparent;
+  border-radius: 25px;
+  transition: border-color 0.3s, padding 0.3s; /* Smooth transition for border color and padding change */
+  border-color: rgba(255, 255, 255, 0.5);
+  padding: 10px 50px; /* Adjust the padding as needed */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.SUPPORT-PHONE:hover,
+.SUPPORT-LOCATION:hover {
+  border-color: red; /* Change border color to red on hover */
+}
+
+/* Remove border from STAY CONNECTED section */
+.stayConnection-section .SUPPORT-PHONE,
+.stayConnection-section .SUPPORT-LOCATION {
+  border: none;
+}
