@@ -33,12 +33,12 @@ import c12 from "../Asset/home/client_partner/incepta.png";
 import c13 from "../Asset/home/client_partner/ispahani.jpg";
 
 const logosData = [
-  { logo: Logo1, title: "Experience", time: "20" },
+  { logo: Logo1, title: "Experience", time: "30" },
   { logo: Logo2, title: "IT Professional", time: "25" },
-  { logo: Logo3, title: "Projects Completed", time: "60" },
+  { logo: Logo3, title: "Projects Completed", time: "2500" },
   { logo: Logo4, title: "Flagship Products", time: "10" },
-  { logo: Logo5, title: "Happy Clients", time: "40" },
-  { logo: Logo6, title: "Tech Partners", time: "5" },
+  { logo: Logo5, title: "Happy Clients", time: "1000" },
+  { logo: Logo6, title: "Tech Partners", time: "10" },
 ];
 
 // /---------------- slider scroll
@@ -132,8 +132,9 @@ const Product = () => {
                     >
                       <span
                         style={{
-                          color: "#7F97B4",
-                          fontWeight: "bolder",
+                          // color: "#7F97B4",
+                          color: "black",
+                          // fontWeight: "bolder",
                           fontSize: "30px",
                           marginLeft: "20%",
                         }}

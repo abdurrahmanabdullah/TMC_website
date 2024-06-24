@@ -343,10 +343,18 @@
   padding: 2%;
   width: 95%;
   height: 95%;
-  margin: 5px;
+
   border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); /* Increased shadow effect */
+
+  /* background-color: #fff; */
+  /* background: rgb(174,238,186); */
+  background: linear-gradient(
+    90deg,
+    rgba(174, 238, 186, 1) 10%,
+    rgba(148, 187, 233, 1) 57%
+  );
+  /* background: linear-gradient(150deg, #39ef74, #4600f1 100%); */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Increased shadow effect */
   /* transition: all 0.1s ease-in-out; */
   opacity: 0.9; /* Increased opacity */
   transition: opacity 0.2s ease-in-out;

@@ -404,7 +404,7 @@ import { MenuOutlined } from "@ant-design/icons";
 import { useEffect, useState } from "react";
 import { TailSpin } from "react-loader-spinner";
 import Logo from "../../Asset/TMC_Logo.png";
-
+import MagneticFramer from "../../components/magneticFrame/magneticFrame.js";
 import "./navbar.css";
 
 const { Header } = Layout;
@@ -535,10 +535,34 @@ function Navbar() {
   return (
     <Header style={{ backgroundColor: "white" }}>
       {/* // <Header style={{ backgroundColor: "white" }}> */}
-      <div className="bg-white" style={{ height: "20px" }}>
-        <div>
+
+      <div className="bg-white" style={{ height: "30px" }}>
+        <div style={{ paddingRight: "60%" }}>
           {" "}
+          <MagneticFramer>
+            {" "}
+            <a href="/home">
+              {" "}
+              <img
+                src={Logo}
+                style={{
+                  width:
+                    windowWidth <= 1366
+                      ? "24%"
+                      : "10%" || windowWidth > 1366
+                      ? "16%"
+                      : "10%",
+                  cursor: "pointer",
+                }}
+                alt="logo"
+              />
+            </a>
+          </MagneticFramer>
+        </div>
+
+        {/* <div>
           <a href="/home">
+            {" "}
             <img
               src={Logo}
               style={{
@@ -552,13 +576,11 @@ function Navbar() {
               alt="logo"
             />
           </a>
-        </div>
+        </div> */}
       </div>
       <div style={{ marginTop: "auto" }}>
         {windowWidth > 900 ? (
           <Menu
-            // backgroundColor:"f2f2f2"
-            // theme="f2f2f2"
             mode="horizontal"
             className="flex-grow mx-0 px-0 flex justify-between"
           >
